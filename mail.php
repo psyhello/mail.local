@@ -15,7 +15,7 @@ switch ($subject) {
 	$to = 'svistunov@gne.gov.spb.ru';
 	$subject = 'Вопрос с официального сайта';
 	$m = "$name \n $email \n $message";
-		mail("$to,$subject , $message, $headers");
+		mail($to,$subject , $message, $headers);
 		echo "$to . $subject . $m";
 		break;
 	case '2':
@@ -36,7 +36,7 @@ switch ($subject) {
 	$to = 'techsupport@gne.gov.spb.ru';
 	$subject = 'Вопрос с официального сайта';
 	$m = "$name \n $email \n $message";
-		mail("$to, $subject , $message, $headers");
+		mail($to, $subject , $message, $headers);
 		echo "$to . $subject . $m";
 		break;
 }
