@@ -1,0 +1,18 @@
+form{
+	border: 2px solid black;
+	border-radius: 15px;
+	display: flex;
+    flex-direction: column;
+    max-width: 50%;
+    padding: 5%;
+}
+form input{
+	border: 1px solid grey;
+	border-radius: 3px;
+	margin: 15px;
+}
+select{
+	border: 1px solid grey;
+	border-radius: 3px;
+	margin: 15px;
+}

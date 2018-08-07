@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<form action="mail.php" method="POST">
+		Ваше имя<input type="text" name="name">
+		Ваша почта<input type="email" name="email" id="">
+		Тема вопроса
+		<select name="subject">
+			<option value="1">Юридический вопрос</option>
+			<option value="2">Технический вопрос</option>
+			<option value="3">Общий вопрос</option>
+			<option value="4">Другое</option>
+		</select>
+		<textarea name="message" id="" cols="30" rows="10">Ваше сообщение</textarea>
+		<input type="submit" name="submit" id="">
+	</form>
+</body>
+</html>
