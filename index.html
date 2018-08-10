@@ -6,17 +6,20 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<form action="mail.php" method="POST">
-		Ваше имя<input type="text" name="name">
-		Ваша почта<input type="email" name="email" id="">
-		Тема вопроса
+	<form class="vopros" action="mail.php" method="POST">
+		Ваше Имя <input type="text" name="name">
+		Ваша Почта <input type="email" name="email" id="">
+		Ваша Организация <input type="text" name="organization" id="">
+		Тема Вопроса
 		<select name="subject">
-			<option value="1">Юридический вопрос</option>
-			<option value="2">Технический вопрос</option>
-			<option value="3">Общий вопрос</option>
-			<option value="4">Другое</option>
+			<option value="1">Вопросы государственного строительного надзора</option>
+			<option value="2">Вопросы выдачи разрешений на строительство и ввод объектов в эксплуатацию</option>
+			<option value="3">Вопросы о порядке работы с ЕССК в части, касающейся ПО</option>
+			<option value="4">Вопросы о взаимодействии со СМИ</option>
+			<option value="5">Вопросы в сфере нормативного правового обеспечения </option>
+			<option value="6">Иные вопросы</option>
 		</select>
-		<textarea name="message" id="" cols="30" rows="10">Ваше сообщение</textarea>
+		Ваше Сообщение <textarea name="message" id="" cols="30" rows="10"></textarea>
 		<input type="submit" name="submit" id="">
 	</form>
 </body>
