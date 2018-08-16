@@ -6,9 +6,9 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<form class="vopros" action="mail.php" method="POST">
-		Ваше Имя <input type="text" name="name">
-		Ваша Почта <input type="email" name="email" id="">
+	<form id="vopros" action="javascript:void(null);" method="POST" onsubmit="call()">
+		Ваше Имя <input type="text" name="name" required="required">
+		Ваша Почта <input type="email" name="email" id="" required="required" >
 		Ваша Организация <input type="text" name="organization" id="">
 		Тема Вопроса
 		<select name="subject">
@@ -21,6 +21,10 @@
 		</select>
 		Ваше Сообщение <textarea name="message" id="" cols="30" rows="10"></textarea>
 		<input type="submit" name="submit" id="">
+			<div class="result">вывод</div>
 	</form>
+
+	<script type="text/javascript" src="http://yandex.st/jquery/2.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="json.js"></script>
 </body>
 </html>
